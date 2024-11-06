@@ -12,19 +12,33 @@
 
 <body>
     <div class="container-lg">
-        <header class="row">
+        <header class="row"> <!--satır varsa sütun olmak zorunda-->
             <div class="col-lg-4 col-md-6 col-sm-12 col-12 bg-primary">logo</div>
             <div class="col-lg-8 col-md-6 col-sm-12 col-12 bg-secondary">başlık</div>
         </header>
-        <nav class="row col bg-danger">Anasayfa İletişim Hakkımızda</nav>
+        <nav class="container-lg bg-danger">Anasayfa İletişim Hakkımızda</nav>
         <!--class a row col da verebilirdik eğer satır satır satır yapmak isteseydik. ama navın satırlara ve sütunlara ihityacı yok
-        .container-lg de verebiliriz
-        boş da bırakabiliriz-->
+        .container-lg de verebiliriz-padding olur
+        boş da bırakabiliriz-padding olur-->
         <main>
-            <section></section>
-            <section></section>
-            <section></section>
-            <section></section>
+            <section class="row">
+                <div class="col bg-warning">slayt alanı</div>
+            </section>
+            <section class="row">
+                <div class="col-lg-5 col-md-6 col-sm-2 col-2 bg-info"> resim alanı</div>
+                <article class="col-lg-7 col-md-6 col-sm-10 col-10 bg-primary"> paragraf alanı</article>
+            </section>
+            <section class="row">
+                <div class="col-lg-6 col-12 bg-danger">resim1</div>
+                <div class="col-lg-6 col-12 bg-warning">resim2</div>
+                <article class="col bg-info">paragraf</article>
+            </section>
+            <section class="row">
+                <div class="col-lg col-6 bg-primary">kutu1</div>
+                <div class="col-lg col-6 bg-warning">kutu2</div>
+                <div class="col-lg col bg-warning">kutu3</div>
+                <div class="col-lg col bg-primary">kutu4</div>
+            </section>
         </main>
         <footer></footer>
     </div>
